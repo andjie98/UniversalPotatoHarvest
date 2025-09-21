@@ -55,7 +55,7 @@ drops:
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/UniversalPotatoHarvest.git
+git clone https://github.com/andjie98/UniversalPotatoHarvest.git
 ```
 
 2. 使用 Maven 构建
@@ -72,11 +72,10 @@ mvn clean package
 
 ## 问题反馈
 如果您在使用过程中遇到任何问题，或有功能建议，请通过以下方式反馈：
-- [提交 Issue](https://github.com/yourusername/UniversalPotatoHarvest/issues)
-- 联系邮箱: your.email@example.com
+- [提交 Issue](https://github.com/andjie98/UniversalPotatoHarvest/issues)
 
 ## 许可证
 本项目采用 [MIT 许可证](LICENSE) 进行授权。
 
 ## 贡献者
-- [您的名字](https://github.com/yourusername) - 项目创建者与维护者
+- [您的名字](https://github.com/andjie98) - 项目创建者与维护者
