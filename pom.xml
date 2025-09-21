@@ -65,10 +65,10 @@
     </repositories>
 
     <dependencies>
-        <!-- 使用Paper API而不是Spigot API以获得更好的兼容性 -->
+        <!-- 使用Spigot API以获得更好的兼容性 -->
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
-            <artifactId>paper-api</artifactId>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
             <version>1.12.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
