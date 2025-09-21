@@ -1,0 +1,10 @@
+name: UniversalPotatoHarvest
+version: 1.0.0
+main: com.laoda.universalph.UniversalPotatoHarvest
+api-version: 1.12
+authors: [laoda]
+description: 当玩家用特定Lore工具收获土豆时掉落自定义物品（全维度生效）。
+commands:
+  uphreload:
+    description: 重载插件配置
+    usage: /<command>

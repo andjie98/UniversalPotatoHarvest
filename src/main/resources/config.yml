@@ -1,0 +1,39 @@
+# UniversalPotatoHarvest 配置
+# 触发物品设置 - 玩家必须持有的带有特定Lore的物品
+
+trigger-item:
+  # 手持物品必须包含的Lore行
+  # 示例: "土豆收割者" - 物品的Lore中必须包含此文本
+  lore: "土豆收割者"
+
+# 掉落物品设置 - 将要掉落的自定义物品
+
+drop-item:
+  # 掉落物的材质类型（任何有效的Minecraft材质）
+  # 示例: "DIAMOND", "EMERALD", "POTATO" 等
+  material: "DIAMOND"
+  
+  # 基础掉落数量（会受到时运附魔影响）
+  amount: 1
+  
+  # 自定义显示名称（使用&作为颜色代码）
+  # 示例: "&6末地土豆" 将显示为金色文本
+  display-name: "&6魔法土豆"
+  
+  # 自定义Lore行（使用&作为颜色代码）
+  # 示例:
+  # lore:
+  #   - "&7特殊的魔法土豆"
+  #   - "&e蕴含神秘能量"
+  lore:
+    - "&7从土豆中提取的魔法精华"
+    - "&e可用于制作强大物品"
+  
+  # 应用于掉落物品的附魔
+  # 格式: "附魔ID:等级"
+  # 示例: 
+  #   - "DURABILITY:3"  # 耐久III
+  #   - "MENDING:1"     # 经验修补I
+  #   - "SHARPNESS:5"   # 锋利V
+  enchants:
+    - "MENDING:1"
