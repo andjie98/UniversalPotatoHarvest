@@ -5,6 +5,26 @@ api-version: 1.12
 authors: [laoda]
 description: 当玩家用特定Lore工具收获土豆时掉落自定义物品（全维度生效）。
 commands:
+  uph:
+    description: UniversalPotatoHarvest 主命令
+    usage: /<command> [reload|tool|help]
+    aliases: [universalpotatoharvest]
+    permission: universalpotatoharvest.use
   uphreload:
-    description: 重载插件配置
+    description: 重载插件配置（旧命令，保留向后兼容）
     usage: /<command>
+    permission: universalpotatoharvest.admin
+
+permissions:
+  universalpotatoharvest.use:
+    description: 允许使用基本插件功能
+    default: true
+  universalpotatoharvest.admin:
+    description: 允许重载插件配置
+    default: op
+  universalpotatoharvest.tool:
+    description: 允许获取土豆收割工具
+    default: op
+  universalpotatoharvest.debug:
+    description: 允许查看调试信息
+    default: op

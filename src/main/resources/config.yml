@@ -1,16 +1,54 @@
 # UniversalPotatoHarvest 配置
-# 触发物品设置 - 玩家必须持有的带有特定Lore的物品
+# 版本 1.1.0
 
+# 版本 1.1.0
+# 触发物品设置 - 玩家必须持有的带有特定Lore的物品
 trigger-item:
   # 手持物品必须包含的Lore行
   # 示例: "土豆收割者" - 物品的Lore中必须包含此文本
   lore: "土豆收割者"
+# 插件设置
+settings:
+  # 是否启用调试模式
+  debug: false
+  
+  # 是否使用多维度掉落物系统
+  # 如果设置为true，将使用drops.yml中的配置
+  # 如果设置为false，将使用下面的drop-item配置
+  use-dimension-drops: true
+  
+  # 是否应用时运附魔效果
+  apply-fortune: true
+  
+  # 时运附魔效果计算方式
+  # "multiply" - 掉落数量乘以(时运等级+1)
+  # "add" - 掉落数量加上时运等级
+  # "chance" - 每级时运增加额外掉落物的概率
+  fortune-calculation: "multiply"
 
-# 掉落物品设置 - 将要掉落的自定义物品
+# 掉落物品设置 - 将要掉落的自定义物品（当use-dimension-drops为false时使用）
+settings:
+  # 是否启用调试模式
+  # 示例: "DIAMOND", "EMERALD", "POTATO_ITEM" 等
+  
+  # 是否使用多维度掉落物系统
+  # 如果设置为true，将使用drops.yml中的配置
+  # 如果设置为false，将使用下面的drop-item配置
+  use-dimension-drops: true
+  
+  # 是否应用时运附魔效果
+  apply-fortune: true
+  
+  # 时运附魔效果计算方式
+  # "multiply" - 掉落数量乘以(时运等级+1)
+  # "add" - 掉落数量加上时运等级
+  # "chance" - 每级时运增加额外掉落物的概率
+  fortune-calculation: "multiply"
 
+# 掉落物品设置 - 将要掉落的自定义物品（当use-dimension-drops为false时使用）
 drop-item:
   # 掉落物的材质类型（任何有效的Minecraft材质）
-  # 示例: "DIAMOND", "EMERALD", "POTATO" 等
+  # 示例: "DIAMOND", "EMERALD", "POTATO_ITEM" 等
   material: "DIAMOND"
   
   # 基础掉落数量（会受到时运附魔影响）
@@ -18,7 +56,14 @@ drop-item:
   
   # 自定义显示名称（使用&作为颜色代码）
   # 示例: "&6末地土豆" 将显示为金色文本
-  display-name: "&6魔法土豆"
+
+# 消息设置
+messages:
+  prefix: "&6[UPH] &r"
+  reload: "&a配置已重载!"
+  no-permission: "&c你没有权限执行此命令!"
+  tool-given: "&a你获得了一个土豆收割工具!"
+  player-only: "&c此命令只能由玩家执行!"  display-name: "&6魔法土豆"
   
   # 自定义Lore行（使用&作为颜色代码）
   # 示例:
@@ -37,3 +82,11 @@ drop-item:
   #   - "SHARPNESS:5"   # 锋利V
   enchants:
     - "MENDING:1"
+
+# 消息设置
+messages:
+  prefix: "&6[UPH] &r"
+  reload: "&a配置已重载!"
+  no-permission: "&c你没有权限执行此命令!"
+  tool-given: "&a你获得了一个土豆收割工具!"
+  player-only: "&c此命令只能由玩家执行!"

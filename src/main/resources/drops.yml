@@ -1,0 +1,94 @@
+# UniversalPotatoHarvest 掉落物配置
+# 此文件配置不同维度的土豆掉落物
+
+# 掉落物配置格式:
+# 维度名称:
+#   - material: 物品材质
+#     chance: 掉落概率 (0.0-1.0)
+#     amount: 掉落数量或范围 (例如: "1" 或 "1-3")
+#     display-name: 显示名称 (支持颜色代码 &)
+#     lore: 物品描述 (支持颜色代码 &)
+#     enchants: 附魔列表 (格式: 附魔ID:等级)
+
+# 主世界掉落物
+world:
+  - material: DIAMOND
+    chance: 0.05
+    amount: 1-2
+    display-name: "&b主世界魔法钻石"
+    lore:
+      - "&7从主世界土豆中提取的魔法精华"
+      - "&e闪烁着奇特的光芒"
+    enchants:
+      - "MENDING:1"
+  
+  - material: EMERALD
+    chance: 0.1
+    amount: 1-3
+    display-name: "&a翡翠土豆"
+    lore:
+      - "&7村民们非常喜欢这种土豆"
+      - "&e可以用于特殊交易"
+  
+  - material: POTATO_ITEM
+    chance: 0.85
+    amount: 2-5
+    display-name: "&6高产土豆"
+    lore:
+      - "&7比普通土豆更有营养"
+
+# 下界掉落物
+nether:
+  - material: BLAZE_ROD
+    chance: 0.1
+    amount: 1-2
+    display-name: "&c炽热土豆棒"
+    lore:
+      - "&7在下界的高温中生长的土豆"
+      - "&e触摸时会灼伤皮肤"
+    enchants:
+      - "FIRE_ASPECT:2"
+  
+  - material: GOLD_INGOT
+    chance: 0.2
+    amount: 1-3
+    display-name: "&6下界金土豆"
+    lore:
+      - "&7猪灵特别喜欢这种土豆"
+      - "&e具有金质的光泽"
+  
+  - material: POTATO_ITEM
+    chance: 0.7
+    amount: 1-4
+    display-name: "&c烤土豆"
+    lore:
+      - "&7在下界的高温中自然烘烤"
+      - "&e比生土豆更美味"
+
+# 末地掉落物
+the_end:
+  - material: ENDER_PEARL
+    chance: 0.15
+    amount: 1-2
+    display-name: "&5末影土豆珍珠"
+    lore:
+      - "&7吸收了末地能量的土豆"
+      - "&e似乎能够传送"
+    enchants:
+      - "SILK_TOUCH:1"
+  
+  - material: CHORUS_FRUIT
+    chance: 0.25
+    amount: 1-3
+    display-name: "&d末地合唱土豆"
+    lore:
+      - "&7与合唱果融合的奇特土豆"
+      - "&e食用后可能会传送"
+  
+  - material: POTATO_ITEM
+    chance: 0.6
+    amount: 2-4
+    display-name: "&5虚空土豆"
+    lore:
+      - "&7在末地虚空能量影响下生长"
+      - "&e散发着微弱的紫色光芒"
